@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Models;
 
 namespace Models
 {
@@ -16,5 +17,7 @@ namespace Models
         public int? StockId { get; set; }
         // Navigation
         public Stock? Stock { get; set; }
+        public string AppUserId { get; set; }
+        public AppUser AppUser { get; set; }
     }
 }
